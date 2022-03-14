@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.scss" />
+  </head>
+  <body>
+    <section class="container mt-3">
+      <h1>User Management Application</h1>
+      <div class="row mt-5 d-flex justify-content-between">
+        <button
+          id="createButton"
+          type="button"
+          class="btn btn-outline-primary col-2"
+          data-bs-toggle="modal"
+          data-bs-target="#createNewModal"
+        >
+          Create new
+        </button>
+
+        <button
+          id="sortButton"
+          class="btn btn-outline-success col-2"
+          type="button"
+        >
+          Sort by Name
+        </button>
+      </div>
+      <!-- Create new Modal -->
+      <div
+        class="modal fade"
+        id="createNewModal"
+        tabindex="-1"
+        aria-labelledby="createNewModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form class="" id="createNewForm" action="" method="POST">
+              <div class="modal-header">
+                <h5 class="modal-title" id="createNewModalLabel"></h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <input type="hidden" name="userId" />
+                <div class="form-floating mb-3">
+                  <input
+                    id="fullName"
+                    type="text"
+                    class="form-control"
+                    placeholder="SomeThing"
+                    name="fullName"
+                  />
+                  <label for="floatingInput">Full Name</label>
+                  <span class="form-error-message" id="errorNameMess"></span>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    id="age"
+                    type="text"
+                    class="form-control"
+                    placeholder="SomeThing"
+                    name="age"
+                  />
+                  <label>Age</label>
+                  <span class="form-error-message" id="errorAgeMess"></span>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    id="address"
+                    type="text"
+                    class="form-control"
+                    placeholder="SomeThing"
+                    name="address"
+                  />
+                  <label>Address</label>
+                  <span class="form-error-message" id="errorAddressMess"></span>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="SomeThing"
+                    name="email"
+                  />
+                  <label>Email</label>
+                  <span class="form-error-message" id="errorEmailMess"></span>
+                </div>
+                <button
+                  type="submit"
+                  name="submitButton"
+                  id="submit-button"
+                  class="btn btn-primary w-100"
+                ></button>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <table id="myTable" class="table table-striped table-hover mt-5">
+        <thead>
+          <tr>
+            <th scope="col" class="col-1">#ID</th>
+            <th scope="col" class="col-2">Name</th>
+            <th scope="col" class="col-2">Age</th>
+            <th scope="col" class="col-2">Address</th>
+            <th scope="col" class="col-3">Email</th>
+            <th scope="col" class="col-2">Config</th>
+          </tr>
+        </thead>
+        <tbody id="display-info"></tbody>
+      </table>
+    </section>
+
+    <script type="module" src="./index.ts"></script>
+    <script
+      type="module"
+      src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js"></script>
+    <script>
+      HTMLInspector.inspect();
+    </script>
+  </body>
+</html>

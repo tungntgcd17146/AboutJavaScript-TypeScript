@@ -1,0 +1,33 @@
+
+.main-section {
+    border: 1px solid black;
+    box-shadow: 5px 10px #888888;
+}
+
+.display {
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: end;
+}
+
+.button {
+    border: 1px solid black;
+}
+
+.big {
+    height: 60%;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.small {
+    height: 30%;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.operation { background-color: $primary; }
+
+.number { background-color: $light; }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.scss">
+</head>
+<body>
+    <section class="mt-5">
+        <div class="container main-section w-25">
+            <div class="display">
+                <div class="big"></div>
+                <div class="small"></div>
+            </div>
+            <div class="btn-group row" role="group" aria-label="Basic mixed styles example">
+                <button type="button" id="clear-all" class="button btn col-3 bg-danger">C</button>
+                <button type="button" class="button operation btn col-3">/</button>
+                <button type="button" class="button operation btn col-3">*</button>
+                <button type="button" id="get-back" class="button btn col-3 bg-primary">B</button>
+                <button type="button" class="button number btn col-3">7</button>
+                <button type="button" class="button number btn col-3">8</button>
+                <button type="button" class="button number btn col-3">9</button>
+                <button type="button" class="button operation btn col-3">-</button>
+                <button type="button" class="button number btn col-3">4</button>
+                <button type="button" class="button number btn col-3">5</button>
+                <button type="button" class="button number btn col-3">6</button>
+                <button type="button" class="button operation btn col-3">+</button>
+                <button type="button" class="button number btn col-3">1</button>
+                <button type="button" class="button number btn col-3">2</button>
+                <button type="button" class="button number btn col-3">3</button>
+                <button type="button" class="button number btn col-3 bg-primary">.</button>
+                <button type="button" class="button number btn col-3">-</button>
+                <button type="button" class="button number btn col-3">0</button>
+                <button type="button" id="equal" class="button btn col-6 bg-success">=</button>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="./js/calculator-UI.js"></script>
+    <script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js"></script>
+    <script> HTMLInspector.inspect() </script>
+</body>
+</html>

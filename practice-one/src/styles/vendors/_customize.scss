@@ -1,0 +1,16 @@
+// Container padding
+$container-padding-x: 0;
+$container-padding-y: 0;
+
+// button customize
+$btn-line-height: 20px;
+$btn-font-weight: 700;
+$btn-padding-y: 40px;
+$btn-padding-x: 35px;
+$btn-border-radius: 0;
+
+// gutter 
+$grid-gutter-width: 0;
+
+// import bootstrap style 
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
